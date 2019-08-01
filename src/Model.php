@@ -124,7 +124,7 @@ class Model extends TpORM
 						}
 
 						$_val = $data[$uColumn];
-						if( is_string( $val ) ){
+						if( is_string( $_val ) ){
 							$_val = '"'.addslashes( $_val ).'"';
 						}  elseif( is_null( $_val ) ){
 							$_val = 'NULL';
