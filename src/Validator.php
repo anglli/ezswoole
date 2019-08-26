@@ -1285,7 +1285,7 @@ class Validator
 	 */
 	protected function phone( $value, $rule = 'zh' )
 	{
-		if( preg_match( "/^1[34578]{1}\d{9}$/", $value ) ){
+		if( preg_match( "/^(0)(6|7)\d{8}$/", $value ) ){
 			return true;
 		} else{
 			return false;
